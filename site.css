@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+.header--naviline {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.header--logo {
+    margin: 29px 0 0 130px;
+}
+.header--nav {
+    text-transform: uppercase;
+    align-self: flex-end;
+    padding: 19px 110px 19px 0;
+}
+.header--logo--list {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 473px;
+    font-size: 16px;
+    color: #79818d;
+}
+.header--logo--list__link{ 
+    display: inline-block;
+}
+.header--background {
+    background-image: url(img/header-backgorund.png);
+    background-size: cover;
+}
+.header--signup {
+    padding: 186px 0 0 0;
+    margin: 0 0 0 160px;
+    width: 510px;
+}
+.header--signup--h1 {
+    text-transform: uppercase;
+    line-height: 1.40;
+    font-size: 51px;
+    color: white;
+}
+.header--signup--p1 {
+    font-size: 25px;
+    color: white;
+}
