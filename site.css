@@ -14,18 +14,18 @@ body {
     align-self: flex-end;
     padding: 19px 110px 19px 0;
 }
-.header--logo--list {
+.header--list {
     list-style: none;
     display: inline-flex;
     justify-content: space-between;
     width: 473px;
 }
-.header--logo--list a {
+.header--list a {
     text-decoration: none;
     font-size: 16px;
     color: #79818d;
 }
-.header--logo--list__link{ 
+.header--list__link{ 
     display: inline-block;
 }
 .header--background {
@@ -100,4 +100,23 @@ body {
 }
 .header--manufacturers--list__item {
     padding: 55px;
+}
+.main--advantages--background {
+    background-image: url(img/laptop-background.png);
+    background-size: cover;
+    margin: 55px 0 0 0;
+}
+.main--advantages__h2 {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 105px 0px 0px 0px;
+    color: #4c5767;
+}
+.main--advantages--list--item {
+    width: 600px;
+}
+.main--advantages--list--item__title {
+    display: inline-flex;
 }
