@@ -19,6 +19,9 @@ body {
     display: inline-flex;
     justify-content: space-between;
     width: 473px;
+}
+.header--logo--list a {
+    text-decoration: none;
     font-size: 16px;
     color: #79818d;
 }
@@ -87,4 +90,14 @@ body {
     font-weight: 500;
     color: white;
     padding: 19px 25px 19px 25px;
+}
+.header--manufacturers--list {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+.header--manufacturers--list__item {
+    padding: 55px;
 }
