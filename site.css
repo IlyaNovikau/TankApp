@@ -2,17 +2,18 @@ body {
     margin: 0;
 }
 .header-naviline {
-    width: 100%;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
+    margin: 0px 110px 0px 110px;
 }
 .header-logo {
-    margin: 29px 0 0 130px;
+    margin: 29px 0 0 0px;
+    align-self: flex-start;
 }
 .header-nav {
     text-transform: uppercase;
     align-self: flex-end;
-    padding: 19px 110px 19px 0;
+    padding: 19px 50px 19px 50px;
 }
 .header-list {
     list-style: none;
@@ -92,15 +93,17 @@ body {
     padding: 19px 25px 19px 25px;
 }
 .header-manufacturers-list {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: auto;
     background-color: #f8f8f8;
+    padding: 0px 20px 0px 20px;
+
 }
 .header-manufacturers-list__item {
-    padding: 55px;
+    padding: 55px 0px 55px 0px;
 }
+
 .main-advantages-background {
     background-image: url(img/laptop-background.png);
     background-size: cover;
@@ -143,116 +146,57 @@ body {
 }
 /* карусель */
 .bootstrap {
-    padding: 0;
-}
- ol, li {
-    list-style: none;
     margin: 0;
-    padding: 0;
+    background-image: url(/img/carousel_background_ship.png);
+    background-size: cover;
 }
-.carousel {
-    position: relative;
-    padding-top: 500px;
-    filter: drop-shadow(0 0 10px #0003);
-    perspective: 100px;
-}
-.carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
- }
-.carousel__slide {
-    position: relative;
-    flex: 0 0 100%;
-    width: 100%;
-    background-image: url(/img/carousel-background.png);
+.bootstrap__h2 {
+    padding-top: 160px;
+    padding-bottom: 200px;
 }
 .main-bootstrap-carousel__h2 {
+    margin: 0;
     width: 100%;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 500;
     text-align: center;
-    margin: 155px 0px 0px 0px;
+    padding: 155px 0px 0px 0px;
     color: #4c5767;
     padding: 0;
 }
+.main-bootstrap-carousel-item__logo {
+    padding: 20px 20px 0px 0px;
+
+}
 .main-bootstrap-carousel-item{
-    margin: 150px 0px 50px 125px;
+    margin: 120px 0px 50px 125px;
     width: 50%;
-    
 }
 .main-bootstrap-carousel-item__title {
     display: flex;
 }
 .main-bootstrap-carousel-item__h3 {
-      margin: 5px 0px 0px 25px;
-      font-size: 30px;
+    font-size: 30px;
+    font-weight: 500;
 }
 .main-bootstrap-carousel-item__description {
-    padding: 10px 0px 50px 0px;
-    font-size: 18px;
-    line-height: 1.5;
-}
-.carousel__slide:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-40%,70px);
-    color: #fff;
-    font-size: 2em;
-}
-.carousel__snapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
-}
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
-    animation-name: none;
-}
-.carousel__navigation {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-}
-.carousel__navigation-list,
-.carousel__navigation-item {
-    display: inline-block;
-}
-.carousel__navigation-button {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #333;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    font-size: 16px;
-    color: white;
-    transition: transform 0.1s;
-    text-decoration: none;
+    margin: 0;
+    padding: 5px 0px 50px 0px;
+    font-size: 19px;
+    line-height: 1.7;
 }
 /* конец корусели */
 .main-registr-bot {
-    margin-top: 340px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 800px;
+    width: 100%;
+    background-color: white;
 }
 .main-registr-bot-title__h2 {
     text-align: center;
@@ -269,8 +213,11 @@ body {
 }
 .main-registr-bot-sendemailarea {
     display: flex;
+    flex-wrap: wrap;
     padding: 30px 0px 0px 0px;
     width: 850px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
 }
 .main-registr-bot-input {
