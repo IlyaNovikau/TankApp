@@ -298,13 +298,8 @@ body {
 .footer-list__link{ 
     display: inline-block;
 }
-@media screen and (min-device-width: 950px) {
+@media screen and (max-width: 950px) {
     .footer-list {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 3px 17px 3px 0px;
-        max-width: 473px;
+       border: none;
     }
-   }
+}
